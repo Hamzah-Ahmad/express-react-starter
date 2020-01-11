@@ -4,6 +4,8 @@ const config = require("config");
 
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
+
 //The following code block can be used to connect to a mongoDB database. The URI is saved in the default.json file inside the config folder
 //const mongoURI = config.get("mongoURI");
 // mongoose
